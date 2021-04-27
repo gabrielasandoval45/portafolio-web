@@ -1,0 +1,330 @@
+/* Patrones globales del CSS */
+body, figure {padding:  0; margin: 0;}
+
+/* Tipo de Titulos, Información, Botones, Enlaces y Subtitulos: Asap */
+h1, h2, h3, h4, h5, h6, a, button { font-family: 'Asap', sans-serif; }
+
+/* Tipo de Parrafos: Asap */
+span, strong, p, em, div { font-family: 'Asap', sans-serif; }
+
+
+/* Configuración del estílo propio */
+
+.wrapper {
+    padding: 32px;
+    margin: 0 auto;
+}
+
+.solo-escritorio{
+    display: none;
+}
+.solo-mobile{
+    display: inline-block;
+}
+header{
+    z-index: 999;
+    background-color: #9B9A65;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+}
+
+header article{
+    width: 90%;
+    margin: 0 auto;
+}
+#contacto, #redes{
+    display: inline-block;
+    padding: 12px 24px;
+    /*width: 27%;*/
+}
+#redes{
+    float: right;
+    padding-right: 0;
+}
+.solo-escritorio span, .solo-escritorio a, i {
+    text-decoration: none;
+    color: #EEC9BC;
+    padding: 4px;
+}
+.solo-escritorio span, .solo-escritorio a, i {
+    display: inline-block !important;
+    text-decoration: none;
+    color: #EEC9BC;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.logo{
+    height: 44px;
+    padding: 3px;
+}
+
+#abrir{
+    padding: 8px;
+    color: #EEDDC8;
+    float: right;
+    align-self: center;
+}
+#menu-responsive {
+    float: right;
+}
+#menu-responsive ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px;
+}
+#menu-responsive > ul > li > a{
+    text-decoration: none;
+    color: #453434;
+    font-family: Asap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+.active, #menu-responsive > ul > li > a:hover{
+    color: #E66432;  
+}
+
+.solo-escritorio .logo{
+    height: 130px;
+}
+
+#banner{
+    padding: 64px 32px;
+    min-height: 300px;
+    background-image: url("imagenes/fondos/gabriela-sandoval-fondo-hompage-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner h1 {
+    color: #EEC9BC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+#quien_soy{
+    background-color: #C78469;
+}
+#quien_soy .titulo{
+    color: #EEC9BC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+}
+#quien_soy p{
+    color: #EEDDC8;
+    font-weight: 500;
+    font-style: italic;    
+    font-size: 18px;
+    line-height: 21px;
+}
+figure{
+    margin: 12px;
+}
+#perfil{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2%;
+}
+.btn{
+    background-color: #9B9A65 !important;
+    border: 0px;
+    border-radius: 15px;
+    color: #EEDDC8;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 10px 16px;
+}
+
+#portafolio{
+    text-align: center;
+    background-color: #E3816A;
+}
+#portafolio .titulo{
+    color: #FFCCCC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 73px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+.logos-portafolio{
+    width: 100%;
+}
+
+#especialidades{
+    background-color: #F0C6B6;
+}
+.especialidad {
+    margin-bottom: 64px;
+}
+.especialidad .titulo{
+    display: inline-block;
+    color: #E3816A;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+    padding-left: 8px;
+    position: relative;
+    margin: 8px;
+}
+.especialidad > p{
+    color: #453434;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+.icon-container{
+    display: inline-block;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #453434;
+}
+.icon-container > i{
+    color: #E3816A;
+}
+.alinear-abajo{
+    display: flex; 
+    align-items: flex-end;
+}
+
+footer {
+    background-color: #453434;
+    padding: 48px;
+}
+#logo_footer{
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    .solo-escritorio{
+        display: block;
+    }
+    .solo-mobile{
+        display: none;
+    }
+    #lugarlogo{
+        display: inline-block; width: 30%;
+    }
+    header{    
+        position: relative;
+    }
+    header article{
+        width: 100%;
+        padding: 0 24px;
+    }
+    #banner article{
+        padding: 16px;
+        overflow: auto;
+    }
+    #banner{
+        padding-top: 0;
+        height: 85vh;
+    }
+
+    #banner .wrapper{
+        max-width: 60%;
+        margin: auto !important;
+        height: 100%;
+    }
+    #banner h1{
+        color: #EEC9BC;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 73px;
+        vertical-align: baseline;
+    }
+
+    .wrapper{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    #quien_soy {
+        overflow: auto;
+    }
+    #quien_soy div {
+        max-width: 50%;
+        float: left;
+    }
+    #quien_soy .titulo{
+        font-size: 64px;
+        line-height: 73px;
+    }
+    #quien_soy p{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    figure #perfil{
+        margin: 76px 0;
+        max-width: 45%;
+        float: right;   
+        object-fit: contain;
+    }
+    .btn{
+        min-width: 320px;
+        border-radius: 20px;
+        font-size: 27px;
+        line-height: 31px;
+        padding: 12px 32px;
+    }
+    #portafolio .titulo{
+        font-size: 64px;
+        line-height: 73px;
+        padding: 32px;
+    }
+    .galeria{
+        max-width: 60%;
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+    .fila {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 8px;
+        scale: 1;
+    }
+    .celda {
+        flex: 31%;
+        max-width: 31%;
+        max-width: 358px;
+        margin: 1%;
+    }
+    .celda-doble {
+        flex: 62%;
+        max-width: 62%;
+        margin: 1%;
+        background-color: #F0C6B6;
+        max-height: 400px;
+    }
+
+    .logos-portafolio{
+        width: 100%;
+        vertical-align: middle;
+        object-fit: contain;
+    }
+
+    .especialidad{
+        display: inline-block;
+        width: 48%;
+    }
+    #logo_footer{
+        height: 130px;
+    }
+}

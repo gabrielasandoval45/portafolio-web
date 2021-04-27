@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- título de la pagína -->
+		<title>Gabriela Sandoval | Diseñadora de marcas</title>
+		<meta title="Gabriela Sandoval | Diseñadora de marcas">
+
+		<!-- codificación de caracteres -->
+		<meta charset="utf-8">
+
+		<!-- diseño responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Llamado ícono de favoritos: 520px x 520px en PNG -->
+		<link rel="icon" href="favicon.png">
+
+		<!-- Llamado a líbreria PrefixFree desde un CDN (cdnjs.com) -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+		<!-- Llamado a tipografía desde Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+		<!-- Llamado a biblioteca de iconos Font Awesome Icons -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+		<!-- Llamado a estilo CSS propio -->
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body>
+		<!-- Componentes Aside: Menú Responsive -->
+		<aside id="menu-responsive" style="display: none;">
+            <a href="#" id="abrir">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="#" id="cerrar" style="display: none;" >
+                <i class="fas fa-times"></i>
+            </a>
+            <nav id="menu-responsive" class="solo-mobile">
+				<ul>
+					<li><a class="active" href="#">INICIO</a></li>
+					<li><a href="#quien_soy">MI PERFIL</a></li>
+					<li><a href="">SERVICIOS</a></li>
+					<li><a href="">REVIEWS</a></li>
+					<li><a href="">CONTACTENOS</a></li>
+					<li><a href="#portafolio">PORTAFOLIO</a></li>
+				</ul>
+            </nav>
+        </aside>
+		<!-- Componente header: -->
+		<header>	
+			<article>
+				<a href="index.html" class="solo-mobile">
+					<img class="logo" src="LOGOGS.svg" alt="Gabriela Sandoval | Diseñadora de marcas">
+				</a>
+				<div class="solo-escritorio" style="width: 98%;">
+					<div id="lugarlogo">
+						<a href="#">
+							<i class="fas fa-map fa-2x"></i>
+							<span>Barranquilla, Colombia</span>
+						</a>
+						<a href="index.html">
+							<img style="margin: 0 30%; height: 44px;" src="LOGOGS.svg" alt="Gabriela Sandoval | Diseñadora de marcas">
+						</a>
+					</div>
+					<div id="contacto">
+						<a href="mailto:gabisv4599@gmail.com">
+							<i class="fas fa-envelope fa-2x"></i>
+							<span>gabisv4599@gmail.com</span>
+						</a>
+						<a href="tel:3233715230">
+							<i class="fas fa-phone fa-2x"></i>
+							<span>3233715230</span>
+						</a>
+					</div>
+					<div id="redes">
+						<span>Sigueme en: </span>
+						<a href="#">
+							<i class="fab fa-facebook fa-2x"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-instagram fa-2x"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-pinterest fa-2x"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-youtube fa-2x"></i>
+						</a>
+					</div>
+				</div>				
+				<a href="#" id="abrir" class="solo-mobile">
+					<i class="fas fa-bars fa-2x"></i>
+				</a>
+			</article>
+		</header>
+		
+		<!-- Caja main: -->
+		<main>
+			<section id="banner">
+				<article class="solo-escritorio">
+					<a href="index.html" style="float: left;">
+						<img class="logo" src="LOGOGS.svg" alt="Gabriela Sandoval | Diseñadora de marcas">
+					</a>
+					<nav id="menu-responsive">
+						<ul>
+							<li><a class="active" href="#">INICIO</a></li>
+							<li><a href="#quien_soy">MI PERFIL</a></li>
+							<li><a href="">SERVICIOS</a></li>
+							<li><a href="">REVIEWS</a></li>
+							<li><a href="">CONTACTENOS</a></li>
+							<li><a href="#portafolio">PORTAFOLIO</a></li>
+						</ul>
+					</nav>
+				</article>
+				<article class="wrapper">
+					<h1>¡Hola!, Soy Gabriela<br> diseñadora de marcas en Colombia </h1>
+					<button class="btn solo-escritorio">¿Qué necesitas?</button>
+				</article>
+			</section>
+			<section id="quien_soy">
+				<article class="wrapper">
+					<div class>
+						<h2 class="titulo">Quien soy y que hago</h2>
+						<p>Mí nombre es Gabriela Sandoval, <strong>diseñadora de marcas,</strong> ya que para mí está es un area que va en crecimiento, me interesé desde muy joven en todo lo que tuviera que ver con imagén corporativa y como la unión de elementos, formas y colores le pueden dar una identidad a un negocio, emprendimiento o a una persona.</p>
+						<p>De momento ofrezco mis servicios como <strong>diseñadora de marcas a nivel de la salud, la estética, la belleza y veterinaria.</strong></p>
+						<button class="btn">¿Quieres saber más?</button>
+					</div>
+					<figure>
+						<image id="perfil" src="imagenes/foto-perfil-gabi-desing.jpg"/>
+					</figure>
+				</article>
+			</section>
+			<section id="portafolio">
+				<article class="galeria">
+					<h2 class="titulo">portafolio</h2>
+					<div class="fila">
+						<img class="celda logos-portafolio" src="imagenes/logo-spa-playero-ubicacion.jpg" alt="Seabrezze spa">
+						<img class="celda logos-portafolio" src="imagenes/logo-psicologa-felicidad-habeych.jpg" alt="Felicidad Habeych psicologa">
+						<img class="celda logos-portafolio" src="imagenes/logo-oftalmologa-veronica-vargas-02.jpg" alt="Veronica Vargas oftalmologa">
+					</div>
+					<div class="fila">
+						<img class="celda logos-portafolio" src="imagenes/logo-cirujano-plastico-heriberto.jpg" alt="Heriberto Vargas cirujano">
+						<img class="celda-doble logos-portafolio" src="imagenes/logo-odontologa-monica-vargas-01.jpg" alt="Monica Vargas odontologa">
+					</div>
+				</article>
+			</section>
+			<section id="especialidades">
+				<div class="wrapper">
+					<article class="especialidad">
+						<div class="alinear-abajo">
+							<div class="icon-container">
+								<i class="fas fa-pen fa-2x"></i>
+							</div>
+							<h3 class="titulo">Diseño gráfico</h3>
+						</div>
+						<p>Todo lo necesario para la comunicacíón visual de tu empresa o producto.</p>
+					</article>
+					<article class="especialidad">
+						<div class="alinear-abajo">
+							<div class="icon-container">
+								<i class="fas fa-desktop fa-2x"></i>
+							</div>
+							<h3 class="titulo">Diseño web</h3>
+						</div>
+						<p>Ahora es un gran atractivo tener presencia en el mundo digital como marca, empresa o persona.</p>
+					</article>
+					<article class="especialidad">
+						<div class="alinear-abajo">
+							<div class="icon-container">
+								<i class="fas fa-user-circle fa-2x"></i>
+							</div>
+							<h3 class="titulo">Identidad corporativa</h3>
+						</div>
+						<p>Deja tu marca en manos de una profesional que la hará un reflejo de lo que eres y ofreces.</p>
+					</article>
+					<article class="especialidad">
+						<div class="alinear-abajo">
+							<div class="icon-container">
+								<i class="fas fa-bullhorn fa-2x"></i>
+							</div>
+							<h3 class="titulo">Marketing</h3>
+						</div>
+						<p>Material promocional para eventos en las que quieras presentar tus productos.</p>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<!-- Componente footer: -->
+		<footer>
+			<img id="logo_footer" src="LOGOGS.svg" />
+		</footer>
+
+		<!-- Zona de Script -->
+		<!-- Llamado a jQuery desde CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<!-- Llamado a librería jQuery Easing desde un CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	  
+		<!-- Llamado al JavaScript propio -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
